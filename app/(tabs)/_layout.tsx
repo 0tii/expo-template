@@ -1,19 +1,11 @@
 import React from 'react';
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Link, Tabs } from 'expo-router';
-import { Pressable } from 'react-native';
+import { Tabs } from 'expo-router';
 
-import Colors from '@/constants/Colors';
-import { useColorScheme } from '@/components/useColorScheme';
-import { useClientOnlyValue } from '@/components/useClientOnlyValue';
-
-// You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
-function TabBarIcon(props: {
-  name: React.ComponentProps<typeof FontAwesome>['name'];
-  color: string;
-}) {
-  return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
-}
+import Colors from '@/src/frontend/constants/Colors';
+import { useColorScheme } from '@/src/config/useColorScheme';
+import { useClientOnlyValue } from '@/src/config/useClientOnlyValue';
+import { TabBarIcon } from '@/src/frontend/components/atoms/TabBarIcon';
+import { ScreenHeader } from '@/src/frontend/components/molecules/ScreenHeader';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -27,31 +19,27 @@ export default function TabLayout() {
         headerShown: useClientOnlyValue(false, true),
       }}>
       <Tabs.Screen
-        name="index"
+        name='index'
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerRight: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="info-circle"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
-          ),
+          tabBarShowLabel: false,
+          tabBarIcon: ({ color }) => <TabBarIcon variant='dashboard' color={color} />,
+          header: () => <ScreenHeader title='Welve.' />,
         }}
       />
       <Tabs.Screen
-        name="two"
+        name='assets'
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarShowLabel: false,
+          tabBarIcon: ({ color }) => <TabBarIcon variant='assets' color={color} />,
+          header: () => <ScreenHeader title='Welve.' />,
+        }}
+      />
+      <Tabs.Screen
+        name='two'
+        options={{
+          tabBarShowLabel: false,
+          header: () => <ScreenHeader title='Welve.' />,
+          tabBarIcon: ({ color }) => <TabBarIcon variant='profile' color={color} />,
         }}
       />
     </Tabs>

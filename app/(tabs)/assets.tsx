@@ -2,10 +2,10 @@ import { StyleSheet } from 'react-native';
 
 import { Text, View } from '@/src/config/Themed';
 
-export default function TabOneScreen() {
+export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Dein Dashboard</Text>
+      <Text style={styles.title}>Deine Assets</Text>
     </View>
   );
 }
