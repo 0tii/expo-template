@@ -8,3 +8,9 @@ App template using React Native with Expo, Expo App-Router, Typescript and Jest.
 2. Upgrade dependencies `npx expo install --fix`
 
 _Refer to [documentation ](https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/)for further guidance_
+
+## Dependencies
+
+### ESLint
+
+ESLint is provided in a bare-bones configuration and can be easily extended.
