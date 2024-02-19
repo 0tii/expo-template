@@ -23,7 +23,7 @@ export default function TabLayout() {
         options={{
           tabBarShowLabel: false,
           tabBarIcon: ({ color }) => <TabBarIcon variant='dashboard' color={color} />,
-          header: () => <ScreenHeader title='Welve.' />,
+          header: () => <ScreenHeader title={process.env.EXPO_PUBLIC_APPLICATION_NAME!} />,
         }}
       />
       <Tabs.Screen
@@ -31,14 +31,14 @@ export default function TabLayout() {
         options={{
           tabBarShowLabel: false,
           tabBarIcon: ({ color }) => <TabBarIcon variant='assets' color={color} />,
-          header: () => <ScreenHeader title='Welve.' />,
+          header: () => <ScreenHeader title={process.env.EXPO_PUBLIC_APPLICATION_NAME!} />,
         }}
       />
       <Tabs.Screen
         name='two'
         options={{
           tabBarShowLabel: false,
-          header: () => <ScreenHeader title='Welve.' />,
+          header: () => <ScreenHeader title={process.env.EXPO_PUBLIC_APPLICATION_NAME!} />,
           tabBarIcon: ({ color }) => <TabBarIcon variant='profile' color={color} />,
         }}
       />
