@@ -1,14 +1,10 @@
-<p align="center">
-  <img width="300" height="100" src="https://i.imgur.com/wonvweN.png">
-</p>
+# React Native Expo App Template with Typescript and Jest
 
-# Welve. App
+App template using React Native with Expo, Expo App-Router, Typescript and Jest.
 
-Welve. is an all-in-one application to help you manage your finances. It not only helps you analyze your spending, it can also help you manage your investment assets and give you valuable insights about your current wealth.
+## Upgrading
 
-## Building
+1. Upgrade Expo SDK `npm install expo@latest`
+2. Upgrade dependencies `npx expo install --fix`
 
-### iOS
-
-- install pods `npx pod-install`
--
+_Refer to [documentation ](https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/)for further guidance_
