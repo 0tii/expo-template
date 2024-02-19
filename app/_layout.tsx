@@ -4,8 +4,16 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
-
 import { useColorScheme } from '@/src/hooks/useColorScheme';
+import { NativeWindStyleSheet } from "nativewind";
+
+/**  
+ * required for nativewind v2 to work in web
+ * ? https://github.com/marklawlor/nativewind/issues/470#issuecomment-1589092569
+ */
+NativeWindStyleSheet.setOutput({
+  default: "native",
+});
 
 export {
   ErrorBoundary,

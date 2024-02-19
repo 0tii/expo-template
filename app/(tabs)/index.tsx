@@ -5,7 +5,7 @@ import { Text, View } from '@/src/config/Themed';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Dein Dashboard</Text>
+      <Text className='text-3xl font-bold text-[#2adb53]'>Dein Dashboard</Text>
     </View>
   );
 }
