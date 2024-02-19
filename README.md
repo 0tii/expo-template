@@ -1,4 +1,4 @@
-# React Native Expo App Template with Typescript and Jest
+## React Native Expo App Template with Typescript, NativeWind and Jest
 
 App template using React Native with Expo, Expo App-Router, Typescript, NativeWind and Jest.
 
