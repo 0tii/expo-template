@@ -2,8 +2,8 @@ import React from 'react';
 import { Tabs } from 'expo-router';
 
 import Colors from '@/src/frontend/constants/Colors';
-import { useColorScheme } from '@/src/config/useColorScheme';
-import { useClientOnlyValue } from '@/src/config/useClientOnlyValue';
+import { useColorScheme } from '@/src/hooks/useColorScheme';
+import { useClientOnlyValue } from '@/src/hooks/useClientOnlyValue';
 import { TabBarIcon } from '@/src/frontend/components/atoms/TabBarIcon';
 import { ScreenHeader } from '@/src/frontend/components/molecules/ScreenHeader';
 

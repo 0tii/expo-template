@@ -7,7 +7,7 @@ type CustomHeaderProps = { title: string };
 
 export const ScreenHeader = ({ title }: CustomHeaderProps) => (
   <View style={styles.headerContainer}>
-    <GradientText style={styles.centeredText}>
+    <GradientText style={styles.centeredText} fontFace="Mocaroni">
       {title}
     </GradientText>
 
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   centeredText: {
-    fontSize: 25,
+    fontSize: 38,
     fontWeight: 'bold',
     textAlign: 'center',
   },
