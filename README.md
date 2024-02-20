@@ -1,6 +1,29 @@
 ## React Native Expo App Template with Typescript, NativeWind and Jest
 
-App template using React Native with Expo, Expo App-Router, Typescript, NativeWind and Jest.
+App template using React Native with Expo, Expo App-Router, Typescript, NativeWind and Jest with an opinionated directory structure and some preconfigured bloat.
+
+## Installation
+
+1. Clone this repository
+2. Run `npm i`
+3. copy `.env.dist` to `.env`
+
+## Running your app
+
+With yarn:
+
+1. Run `yarn start` to start your Expo app
+2. Use the `--web` flag to test your app in the browser
+
+With npm:
+
+1. Run `npm run start` to start your Expo app
+2. Use the `--web` flag to test your app in the browser
+
+Test on an iOS device:
+
+1. Download the Expo Go app
+2. Scan the QR code generated with the `start` command from above with your camera app and follow the link to open the app on your device
 
 ## Upgrading Expo
 
