@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextProps, TextStyle } from 'react-native';
+import { Platform, TextProps, TextStyle } from 'react-native';
 import { Text } from '../../../config/Themed'
 import { LinearGradient } from 'expo-linear-gradient';
 import MaskedView from '@react-native-masked-view/masked-view';
@@ -13,7 +13,8 @@ interface GradientTextProps extends TextProps {
 
 export const GradientText = ({ colors, fontFace, children, style, ...rest }: GradientTextProps) => {
   const gradientColors = colors ?? ['#13FDCE', '#3179FF', '#3179FF'];
-  return (
+
+  return Platform.OS !== 'web' ? (
     <MaskedView
       maskElement={
         <Text style={[style, { fontFamily: fontFace ?? undefined }]} {...rest}>
@@ -29,6 +30,12 @@ export const GradientText = ({ colors, fontFace, children, style, ...rest }: Gra
         </Text>
       </LinearGradient>
     </MaskedView>
-  );
+  )
+    :
+    (
+      <Text style={[style, { fontFamily: fontFace ?? undefined, color: colors?.[0] ?? '#13FDCE' }]} {...rest} >
+        {children}
+      </Text>
+    );
 };
 
