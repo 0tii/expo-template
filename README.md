@@ -5,10 +5,13 @@ App template using React Native with Expo, Expo App-Router, Typescript, NativeWi
 ## Installation
 
 1. Clone this repository
-
 2. Run `npm i`
-
 3. copy `.env.dist` to `.env`
+4. check output for Prettier error, if it can't find the `.prettierrc`, add this line to `.vscode/settings.json`:
+
+```json
+"prettier.configPath": ".prettierrc"
+```
 
 ## Running your app
 
