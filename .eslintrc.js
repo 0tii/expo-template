@@ -5,6 +5,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'unused-imports'],
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
   rules: {
+    quotes: ['error', 'single', { avoidEscape: true }],
     'no-unused-vars': 'off',
     'no-undef': 'off',
     'unused-imports/no-unused-imports': 'error',
