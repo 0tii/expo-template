@@ -27,8 +27,8 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../src/assets/fonts/SpaceMono-Regular.ttf'),
-    Mocaroni: require('../src/assets/fonts/Mocaroni.ttf'),
+    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    Mocaroni: require('../assets/fonts/Mocaroni.ttf'),
     ...FontAwesome.font,
   });
 

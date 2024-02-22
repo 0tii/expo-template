@@ -5,7 +5,9 @@ App template using React Native with Expo, Expo App-Router, Typescript, NativeWi
 ## Installation
 
 1. Clone this repository
+
 2. Run `npm i`
+
 3. copy `.env.dist` to `.env`
 
 ## Running your app
@@ -19,6 +21,10 @@ With npm:
 
 1. Run `npm run start` to start your Expo app
 2. Use the `--web` flag to test your app in the browser
+
+Developing in WSL or container:
+
+1. use `npm run start:tunnel` instead
 
 Test on an iOS device:
 
