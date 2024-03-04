@@ -43,3 +43,4 @@ expo-env.d.ts
 # RITE Soft
 .vscode
 .env
+android/

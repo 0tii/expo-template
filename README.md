@@ -1,6 +1,6 @@
-## React Native Expo App Template with Typescript, NativeWind and Jest
+## React Native Expo App Template with Typescript, SQLite & ORM, NativeWind and Jest
 
-App template using React Native with Expo, Expo App-Router, Typescript, NativeWind and Jest with an opinionated directory structure and some preconfigured bloat.
+App template using React Native with Expo, Expo App-Router, Typescript, SQLite integration and Drizzle ORM, NativeWind and Jest with an opinionated directory structure and some preconfigured bloat.
 
 ## Installation
 
