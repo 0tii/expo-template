@@ -5,7 +5,7 @@ import { Text, View } from '@/src/config/Themed';
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Deine Assets</Text>
+      <Text style={styles.title}>Your Assets</Text>
     </View>
   );
 }
